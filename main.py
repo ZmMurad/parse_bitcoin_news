@@ -44,4 +44,4 @@ if __name__=="__main__":
     page_source=scrap("https://www.coindesk.com/search?s=bitcoin")
     items=get_news("searchstyles__SearchCardWrapper-ci5zlg-21 hZygnS",page_source)
     list_out=get_news_name_date_link(items,"typography__StyledTypography-owin6q-0 lfNAOh","https://www.coindesk.com/")
-    save_to_csv("data.csv")
+    save_to_csv("data.csv",list_out)
